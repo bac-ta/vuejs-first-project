@@ -1,14 +1,17 @@
 <template>
     <div id="app">
-        <div class="container">
-            <ItemLayout :items="items"/>
-        </div>
+        <!--        <div class="container">-->
+        <!--            <ItemLayout :items="items"/>-->
+        <!--        </div>-->
+        <Form/>
+        <Display/>
     </div>
 </template>
 
 <script>
 
-    import ItemLayout from "@/components/ItemLayout";
+    import Form from "@/components/VueXLearning/Form";
+    import Display from "@/components/VueXLearning/Display";
 
     export default {
         name: 'app',
@@ -19,7 +22,9 @@
             }
         },
         components: {
-            ItemLayout
+            Display,
+            Form
+            // ItemLayout
         }
     }
 </script>
